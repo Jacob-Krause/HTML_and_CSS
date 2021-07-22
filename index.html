@@ -14,9 +14,11 @@
         <!--Navbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -50,7 +52,7 @@
             </strong>
         </div>
 
-        <!-- Slideshow section added -->
+        <!-- Slideshow Section -->
         <div id="Slideshow">
             <div id="Slideshow_Background"> 
                 <div id="Slideshow_Container">
@@ -90,7 +92,7 @@
                 </div>
                 <br> <!-- Adds a space between the slideshow images and the dots -->
 
-                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <!-- Slideshow dots -->
                 <div style="text-align: center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
